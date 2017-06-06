@@ -1,0 +1,30 @@
+3
+Dumitru Andrei
+5
+Dumitrescu Marius
+2
+Stan Alina
+4
+Popescu Catalin
+1
+Constantinescu Maria
+6
+Ilie Andrei
+8
+Popa Marius
+7
+Ionita Alina
+10
+Eremia Catalin
+9
+Constantin Maria
+13
+Dumitrache Andrei
+12
+Pana Marius
+11
+Ionescu Alina
+15
+Mircea Catalin
+14
+Balan Maria
