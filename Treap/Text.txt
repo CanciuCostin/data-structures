@@ -1,0 +1,10 @@
+3 100
+Dumitru Andrei
+5 200
+Dumitrescu Marius
+1 300
+Stan Alina
+4 450
+Popescu Catalin
+2 50
+Constantinescu Maria
