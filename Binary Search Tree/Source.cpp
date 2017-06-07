@@ -66,9 +66,10 @@ void logicalDeletion(TreeNode* &root, TreeNode* &leftSubtree)
 	{
 		free(root->info);
 		root->info = leftSubtree->info;
+		leftSubtree->info = nullptr;
 		TreeNode* tmp = leftSubtree;
 		leftSubtree = leftSubtree->left;
-		free(leftSubtree);
+		free(tmp);
 	}
 
 }
