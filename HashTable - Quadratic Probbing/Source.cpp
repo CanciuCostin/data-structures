@@ -57,9 +57,9 @@ void reHashTable(HashTable &ht)
 			while (newStudents[poz])
 			{
 				nrCollisons++;
-				poz = poz + 2 * ++nrCollisons ^ 2;
-				if (poz > ht.size - 1)
-					poz = poz % ht.size;
+				poz = poz + 2 * (nrCollisons *nrCollisons);
+				if (poz >= ht.size )
+					poz = poz %ht.size;
 			}
 			newStudents[poz] = ht.elements[i];
 		}
@@ -82,8 +82,8 @@ void insertHashTable(HashTable &ht, int id, char* name)
 	while (ht.elements[poz])
 	{
 		nrCollisons++;
-		poz = poz + 2 * ++nrCollisons ^ 2;
-		if (poz > ht.size-1)
+		poz = poz + 2 * (nrCollisons *nrCollisons);
+		if (poz >= ht.size)
 			poz = poz % ht.size;
 	}
 	ht.elements[poz] = s;
@@ -98,8 +98,8 @@ Student* getElement(HashTable ht, char* name)
 	while (strcmp(ht.elements[poz]->name, name))
 	{
 		nrCollisions++;
-		poz = poz + 2 * ++nrCollisions ^ 2;
-		if (poz > ht.size-1)
+		poz = poz + 2 * (nrCollisions *nrCollisions);
+		if (poz >= ht.size)
 			poz = poz % ht.size;
 	}
 	return ht.elements[poz];
